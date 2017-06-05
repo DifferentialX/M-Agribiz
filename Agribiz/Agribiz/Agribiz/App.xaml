@@ -9,7 +9,14 @@
             <Color x:Key="DarkBackgroundColor">#C0C0C0</Color>
             <Color x:Key="MediumGrayTextColor">#4d4d4d</Color>
             <Color x:Key="LightTextColor">#999999</Color>
-
+            
+            <Color x:Key="Agrigreen">#7bae23</Color>
+            <Color x:Key="Agrigray">#575a59</Color>
+            <Color x:Key="Agrilight">#e8e8e8</Color>
+            <Color x:Key="Agrigright">#84bb26</Color>
+            <Color x:Key="Agridark">#444645</Color>
+            <Color x:Key="Agriwhite">#dcdcdc</Color>
+            
             <Style TargetType="NavigationPage">
                 <Setter Property="BarBackgroundColor" Value="{StaticResource Primary}" />
                 <Setter Property="BarTextColor" Value="White" />
