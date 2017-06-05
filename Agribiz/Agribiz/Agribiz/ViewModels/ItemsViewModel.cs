@@ -10,7 +10,7 @@ using Xamarin.Forms;
 
 namespace Agribiz.ViewModels
 {
-	public class ItemsViewModel : BaseViewModel
+	public class ItemsViewModel : BaseViewModel<Item>
 	{
 		public ObservableRangeCollection<Item> Items { get; set; }
 		public Command LoadItemsCommand { get; set; }
