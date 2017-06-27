@@ -3,7 +3,7 @@ using System;
 
 namespace Agribiz.Models
 {
-	internal class Product
+	public class Product
 	{
 		public int Id { get; set; }
 		[JsonProperty("titre")]
