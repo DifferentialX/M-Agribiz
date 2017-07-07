@@ -4,7 +4,7 @@
 			 x:Class="Agribiz.Views.ProductDetailPage"
 			 Title="{Binding Title}">
     <StackLayout Spacing="20" Padding="15">
-        <Label Text="{Binding Product.Title}" FontSize="Medium"/>
+        <Image Source="{Binding ImageUri}" />
         <Label Text="{Binding Product.Description}" FontSize="Small"/>
         <Label FormattedText="Price: " Text="{Binding Product.Price}" FontSize="Small"/>
         <Label Text="{Binding Product.Quantity}" FontSize="Small"/>
