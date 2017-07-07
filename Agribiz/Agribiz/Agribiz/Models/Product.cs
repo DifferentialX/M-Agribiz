@@ -12,6 +12,7 @@ namespace Agribiz.Models
 		public string Image { get; set; }
 		[JsonProperty("quantite")]
 		public string Quantity { get; set; }
+		[JsonProperty("prix")]
 		public string Price { get; set; }
 		[JsonProperty("categorie")]
 		public string Category { get; set; }

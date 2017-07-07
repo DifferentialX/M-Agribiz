@@ -4,11 +4,16 @@
              xmlns:local="clr-namespace:Agribiz.Views"
 			 x:Class="Agribiz.Views.ProductDetailPage"
 			 Title="{Binding Title}">
-    <StackLayout Spacing="20" Padding="15">
-        <Image Source="{Binding ImageUri}" />
-        <Label Text="{Binding Product.Description}" FontSize="Small"/>
-        <Label FormattedText="Price: " Text="{Binding Product.Price}" FontSize="Small"/>
-        <Label Text="{Binding Product.Quantity}" FontSize="Small"/>
-        <local:TextDetail Descriptor="Prix" Detail="{Binding Product.Price}" />
-    </StackLayout>
+    <ScrollView>
+
+        <StackLayout Spacing="20" Padding="15">
+            <Image Source="{Binding ImageUri}" />
+            <Label Text="{Binding Product.Title}" FontSize="Large" />
+            <local:TextDetail Descriptor="Description" Detail="{Binding Product.Description}" />
+            <local:TextDetail Descriptor="Prix" Detail="{Binding Product.Price}" />
+            <local:TextDetail Descriptor="Quantité" Detail="{Binding Product.Quantity}" />
+            <local:TextDetail Descriptor="Categorie" Detail="{Binding Product.Category}" />
+            <local:TextDetail Descriptor="Proprietaire" Detail="{Binding Product.Proprietor}" />
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

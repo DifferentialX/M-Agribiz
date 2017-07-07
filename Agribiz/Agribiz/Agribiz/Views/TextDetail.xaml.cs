@@ -8,9 +8,10 @@ using Xamarin.Forms;
 
 namespace Agribiz.Views
 {
-	public partial class TextDetail : ContentView
+	public partial class TextDetail : StackLayout
 	{
-		public static readonly BindableProperty DescriptorProperty = BindableProperty.Create(nameof(Descriptor), typeof(string), typeof(TextDetail));
+		public static readonly BindableProperty DescriptorProperty = 
+			BindableProperty.Create(nameof(Descriptor), typeof(string), typeof(TextDetail));
 
 		public string Descriptor
 		{
@@ -24,7 +25,8 @@ namespace Agribiz.Views
 			}
 		}
 
-		public static readonly BindableProperty DetailProperty = BindableProperty.Create(nameof(Detail), typeof(string), typeof(TextDetail));
+		public static readonly BindableProperty DetailProperty = 
+			BindableProperty.Create(nameof(Detail), typeof(string), typeof(TextDetail));
 
 		public string Detail
 		{
@@ -40,7 +42,6 @@ namespace Agribiz.Views
 
 		public TextDetail()
 		{
-			BindingContext = this;
 			InitializeComponent();
 		}
 	}
